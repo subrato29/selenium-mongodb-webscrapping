@@ -6,7 +6,7 @@ selenium-mongodb-webscrapping
 
 Author: Subrato Sarkar
 
-Repo url: https://github.com/subrato29/selenium-selenoid-gcp-integration
+Repo url: https://github.com/subrato29/selenium-mongodb-webscrapping.git
 
 ```
 

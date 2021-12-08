@@ -68,7 +68,6 @@ public class DriverScript {
 	@BeforeSuite
 	public void connectMongoDB () {
 		//Connecting mongo db
-		Logger mongoLogger = Logger.getLogger("org.mongodb.driver");
 		MongoClient mongoClient = MongoClients.create("mongodb://localhost:27017");
 		MongoDatabase db = mongoClient.getDatabase("autodb");
 		
