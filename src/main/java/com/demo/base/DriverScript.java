@@ -2,7 +2,6 @@ package com.demo.base;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.logging.Logger;
 
 import org.bson.Document;
 import org.openqa.selenium.WebDriver;
@@ -71,7 +70,8 @@ public class DriverScript {
 		MongoClient mongoClient = MongoClients.create("mongodb://localhost:27017");
 		MongoDatabase db = mongoClient.getDatabase("autodb");
 		
-		//Create collection:
+		//Create collection
+		//Name of the collection created is 'web'
 		webCollection = db.getCollection("web");
 	}
 	
