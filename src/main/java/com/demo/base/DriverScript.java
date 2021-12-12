@@ -6,7 +6,7 @@ import java.io.IOException;
 import org.bson.Document;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeMethod;
 
 import com.demo.actions.TestEngine;
 import com.demo.support.RemoteGridSupport;
@@ -64,7 +64,7 @@ public class DriverScript {
 		TestEngine.quit();
 	}
 	
-	@BeforeSuite
+	@BeforeMethod
 	public void connectMongoDB () {
 		//Connecting mongo db
 		MongoClient mongoClient = MongoClients.create("mongodb://localhost:27017");

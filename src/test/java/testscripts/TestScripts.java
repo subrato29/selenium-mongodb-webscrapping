@@ -19,6 +19,8 @@ public class TestScripts extends DriverScript{
 			int linksCount = driver.findElements(By.tagName("a")).size();
 			int imageCount = driver.findElements(By.tagName("img")).size();
 			
+			System.out.println(url + "++" + title + "++" + linksCount + "++" + imageCount); 
+			
 			List<WebElement> listOfLinks = driver.findElements(By.tagName("a"));
 			List<String> linksAttribute = new ArrayList<String>();
 			

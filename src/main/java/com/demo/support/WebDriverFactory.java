@@ -22,7 +22,6 @@ public class WebDriverFactory extends DriverScript{
 			TestEngine.deleteCookies();
 			driver.manage().timeouts().implicitlyWait(implicitWait, TimeUnit.SECONDS);
 			driver.get (baseUrl);
-			TestEngine.maximize();
 		} else if (BROWSER.toUpperCase().equals("IE")) {
 			//code
 		} else if (BROWSER.toUpperCase().equals("FIREFOX")) {
